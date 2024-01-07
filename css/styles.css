@@ -5,12 +5,80 @@ body {
 }
 a {
     text-decoration: none;
+    color: currentColor;
 }
 ul, ol {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto; 
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+.header-nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-left: 76px;
+ 
+}
+.adres-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-end;
+  
 }
 .adress {
     font-style: normal;
+   
 }
 
 .logo {
@@ -21,7 +89,8 @@ ul, ol {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-}
+    
+   }
 
 .logo-part {
     color: #2E2F42;
@@ -52,6 +121,8 @@ ul, ol {
 
 .hero-title {
     background: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .head-title {
@@ -61,6 +132,9 @@ ul, ol {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-btn {
@@ -71,9 +145,28 @@ ul, ol {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    margin-top: 48px;
+    display: block;
+    padding: 16px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-btn:hover,.hero-btn:focus {
     background:#404BBF;
+}
+
+.feature-title {
+    background: #FFF;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.feature-list {
+    display: flex;
+    gap: 24px;
+ 
+   
 }
 
 .feature-descr {
@@ -82,6 +175,9 @@ ul, ol {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    padding-bottom: 8px;
+  
+   
 }
 
 .item-descr {
@@ -89,12 +185,39 @@ ul, ol {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+   
+   
 }
+
+.feature-item {
+    width: calc((100% - 24px * 3) / 4);
+
+}
+
 .team-title {
     background: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
+   
+}
+
+.team-block {
+        display: flex;
+        width: 232px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding-top: 32px;
+        padding-bottom: 32px;
 }
 
 .team-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 72px;
+}
+.team-item {
     background: #FFF;
 }
 .team-head {
@@ -105,7 +228,7 @@ ul, ol {
     line-height: 1.11;  
     letter-spacing: 0.02em;
     text-transform: capitalize;
-}
+} 
 
 .team-member {
     color:#2E2F42;
@@ -120,6 +243,32 @@ ul, ol {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+.portfolio-title {
+    background: #FFF;
+        padding-top: 120px;
+        padding-bottom: 120px;
+}
+.portfolio-roster {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    margin-top: 72px;  
+}
+.portfolio-list {
+    width: calc((100% - 24px * 2) / 3);
+}
+
+.portfolio-block {
+        display: flex;
+        width: 360px;
+        flex-direction: column;
+        justify-content: flex-start;
+       
+        gap: 8px;
+        padding-top: 32px;
+        padding-bottom: 32px;
 }
 
 .portfolio-head {
@@ -138,6 +287,7 @@ ul, ol {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    padding-left: 16px;
 }
 
 .portfolio-descr {
@@ -145,10 +295,13 @@ ul, ol {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-left: 16px;
 }
 
 .footer-title {
     background: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -169,4 +322,7 @@ ul, ol {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    display: block;
+    width: 264px;
+    padding-top: 16px;
 }
